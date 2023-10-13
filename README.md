@@ -12,7 +12,8 @@ git init
 git status
 ´´´
 
-### Pour voir les fichiers et dossiers Unix 
+### Pour voir les fichiers et dossiers Unix
+le -a permet d'afficher les fichiers cachés
 
 ```bash
 ls -a
@@ -37,6 +38,12 @@ des identifiants des sauvegardes
 ```bash
 git add.
 ```
+
+## Pour retirer un fichier du staging 
+```bash
+git restore --staged README.md
+```
+
 ## Ajout d'un serveur 
 Nous allons utiliser un dépôt que l'on va créer sur github.com
 après connexion. Comme c'est un travail personel, son URL sera de ce type
@@ -73,3 +80,4 @@ Si on a effectué des modifications en local non voulue empêchant la récupéra
 
 On peut utiliser un `git stash`pour faire une pseudo sauvegarde et revenir au dernier commit avant de refaire un 
 `git pull`
+
