@@ -12,7 +12,8 @@ git init
 git status
 ´´´
 
-### Pour voir les fichiers et dossiers Unix 
+### Pour voir les fichiers et dossiers Unix
+le -a permet d'afficher les fichiers cachés
 
 ```bash
 ls -a
@@ -36,5 +37,9 @@ des identifiants des sauvegardes
 ## Pour ajouter tous les fichiers en staging
 ```bash
 git add.
+```
+##Pour retirer un fichier du staging 
+```bash
+git restore --staged README.md
 ```
 ## Ajout d'un serveur distant
