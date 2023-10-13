@@ -38,7 +38,7 @@ des identifiants des sauvegardes
 ```bash
 git add.
 ```
-##Pour retirer un fichier du staging 
+## Pour retirer un fichier du staging 
 ```bash
 git restore --staged README.md
 ```
