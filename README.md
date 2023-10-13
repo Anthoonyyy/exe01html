@@ -37,4 +37,39 @@ des identifiants des sauvegardes
 ```bash
 git add.
 ```
-## Ajout d'un serveur distant
+## Ajout d'un serveur 
+Nous allons utiliser un dépôt que l'on va créer sur github.com
+après connexion. Comme c'est un travail personel, son URL sera de ce type
+https://github.com/Username/Le nomduprojet
+ 
+Nous créons un new repository, puis nous copions la clé SSH :
+ 
+git@github.com:Anthoonyyy/exe01html.git
+
+Nous retournons dans notre console:
+```bash
+git remote add origin git@github.com:Anthoonyyy/exe01html.git
+```
+Pour voir si ca a fonctionner :
+```bash
+git remote -v
+```
+## Envoi du projet 
+```bash
+git push origin main
+```
+## Récupération du projet 
+Si on souhaite récuperer que le `.git`(donc l'historique sans les fichiers)
+
+```bash
+git fetch origin main
+```
+Si on souhaite récupérer toute la branche `main`
+
+```bash
+git pull origin main
+```
+Si on a effectué des modifications en local non voulue empêchant la récupération des fichiers.(`merge error`).
+
+On peut utiliser un `git stash`pour faire une pseudo sauvegarde et revenir au dernier commit avant de refaire un 
+`git pull`
